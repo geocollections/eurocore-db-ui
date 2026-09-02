@@ -952,11 +952,11 @@
               source: new SourceOSM()
             }),
             new LayerTile({
-              title: 'CartoDB',
+              title: 'ArcGIS',
               type: 'base',
               visible: true,
               source: new SourceXYZ({
-                url: 'https://{a-f}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
+                url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
               })
             })
           ]
